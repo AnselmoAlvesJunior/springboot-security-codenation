@@ -1,18 +1,18 @@
 # Oauth2 com Spring
 
-Neste desafio você receberá um projeto Maven pré-configurado com Springboot, Spring-JPA, Spring-WEB, Spring-com.challenge.security.Security e banco de dados H2.
+Neste desafio o projeto Maven vem pré-configurado com Springboot, Spring-JPA, Spring-WEB, Spring-com.challenge.security.Security e banco de dados H2.
 
-Utilize a lib [Spring com.challenge.security.Security OAuth2 AutoConfigure](https://mvnrepository.com/artifact/org.springframework.security.oauth.boot/spring-security-oauth2-autoconfigure/2.1.6.RELEASE) para utilizar Oauth2 no seu projeto spring.
+Utilizo a lib [Spring com.challenge.security.Security OAuth2 AutoConfigure](https://mvnrepository.com/artifact/org.springframework.security.oauth.boot/spring-security-oauth2-autoconfigure/2.1.6.RELEASE) para utilizar Oauth2 no projeto spring.
 
-1. Configure o Resource Server através da annotation @EnableResourceServer para expor o endpoint /user e bloquear todos os outros.
+1. Configuro o Resource Server através da annotation @EnableResourceServer para expor o endpoint /user e bloquear todos os outros.
 
-2. Configure o Authentication Server através da annotation @EnableAuthorizationServer.
+2. Configuro o Authentication Server através da annotation @EnableAuthorizationServer.
 
     - O Email dos Usuários deve ser utilizado como login
     - A aplicação deve ser configurada para utilizar o UserRepository para buscar o Usuario por e-mail
     - A senha não deve estar encriptada
 
-3. Utilize a propriedade do spring para setar scope password, client_id e client_secret.
+3. Utilizo a propriedade do spring para setar scope password, client_id e client_secret.
 
         security.oauth2.client.scope=password
         security.oauth2.client.client-secret=
